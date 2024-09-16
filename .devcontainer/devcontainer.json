@@ -24,7 +24,7 @@
         "python.defaultInterpreterPath": "/usr/local/bin/python",
         "python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
         "python.formatting.blackPath": "/usr/local/py-utils/bin/black",
-        "python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
+        "python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf"
       },
       "extensions": [
         "dbaeumer.vscode-eslint",
@@ -46,9 +46,9 @@
   ],
   // Use 'onCreateCommand' to run commands at the end of container creation.
   // Use 'postCreateCommand' to run commands after the container is created.
-  "onCreateCommand": "sudo chown -R vscode:vscode /workspaces/mealie/frontend/node_modules && make setup",
+  "onCreateCommand": "sudo chown -R vscode:vscode /workspaces/mealie/frontend/node_modules;sudo chown -R vscode:vscode /home/vscode/commandhistory;whoami;echo 'onCreateCommand Completed!'",
   // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-  "remoteUser": "vscode",
+  "remoteUser": "vscode"
   // "features": {
   //   "git": "latest"
   // }
